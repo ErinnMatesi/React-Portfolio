@@ -15,14 +15,14 @@
 
 /* HEADER DETAILS */
 header {
-    background-color: var(--mauve);
+    background-color: var(--blue);
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 10px solid var(--wheat);
-    color: var(--wheat);
-    z-index: 10;
-    padding: 20px 40px 0px 40px;
+    border-bottom: 2px solid var(--coral);
+    color: var(--lightBlue);
+    /* z-index: 10; */
+    padding: 15px 35px 15px 35px;
 }
 
 /* to make intro and nav sit in the same line */
@@ -41,12 +41,12 @@ nav {
 }
 
 a {
-    color: var(--wheat);
+    color: var(--lightBlue);
     transition-duration: 0.2s;
 }
 
 nav ul li a:hover {
-    color: var(--gray);
+    color: var(--darkGreen);
 }
 
 li {
@@ -55,17 +55,19 @@ li {
     text-decoration: none;
   }
 
-.homePage{
+/* .homePage{
     background-image: url('../images/Background.png');
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
-}
+} */
 
 /* BODY DETAILS */
 body {
-    background-color: var(--gray);
-    color: var(--wheat);
+    background-image: url('../images/Background.png');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -106,7 +108,7 @@ h1 {
     font-size: 200%;
     text-align: center;
     font-weight: 300;
-    border-bottom: 1px solid var(--mauve);
+    border-bottom: 1px solid var(--darkGreen);
     padding-bottom: 5px;
 }
 
@@ -114,7 +116,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 10px solid var(--mauve);
+    border: 10px solid var(--darkGreen);
     width: 200px;
 }
 
@@ -133,18 +135,18 @@ h1 {
 /* image itself needs to have its width set, not parent element */
 .project1 a img {
     width: 100%;
-    border: 10px solid var(--mauve);
+    border: 10px solid var(--darkGreen);
 }
 
 .prjImg {
     width: 100%;
-    border: 10px solid var(--mauve);
+    border: 10px solid var(--darkGreen);
     height: 275px;
 }
 
 
 h2 {
-    background-color: var(--mauve);
+    background-color: var(--darkGreen);
     border-radius: 8px;
     text-align: center;
     padding-right: auto;
@@ -164,11 +166,15 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 15px;
-    column-gap: 10px;
-    width: 80vw;
-    padding-top: 15px;
+    justify-content: center;
+    /* row-gap: 15px;
+    column-gap: 10px; */
+    /* width: 80vw; */
+    padding-top: 4px;
+}
+
+.logos {
+    width: 30px;
 }
 
 .text-center {
@@ -179,18 +185,21 @@ h2 {
 }
 
 .text-center li a:hover {
-    color: var(--mauve);
+    color: var(--darkGreen);
 }
 
 /* FOOTER DETAILS */
 footer {
-    background-color: var(--mauve);
-    height: 50px;
+    background-color: var(--blue);
+    height: 40px;
     width: 100%;
-    border-bottom: 10px solid var(--wheat);
-    color: var(--wheat);
+    border-top: 2px solid var(--coral);
+    color: var(--lightBlue);
     line-height: 3;
     text-align: center;
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
 }
 
 @media screen and (max-width: 1200px) {
