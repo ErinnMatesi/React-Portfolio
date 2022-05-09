@@ -6,9 +6,11 @@
 
 /* setting base colors for use throughout the site */
 :root {
-    --wheat: #F5E0B7;
-    --mauve: #5D2A42;
-    --gray: #857E7B;
+    --blue: #4E7DA6;
+    --lightBlue: #77C7D9;
+    --darkGreen: #16591B;
+    --green: #6C8C3B;
+    --coral: #D96C6C;
 }
 
 /* HEADER DETAILS */
@@ -53,6 +55,13 @@ li {
     text-decoration: none;
   }
 
+.homePage{
+    background-image: url('../images/Background.png');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
 /* BODY DETAILS */
 body {
     background-color: var(--gray);
@@ -82,11 +91,11 @@ section {
     padding-top: 10px;
     row-gap: 10px;
 } */
-.container {
+/* .container {
     margin-left: auto;
     margin-right: auto;
     width: 95vw;
-}
+} */
 
 .row>* {
     padding-right: 0 !important;
