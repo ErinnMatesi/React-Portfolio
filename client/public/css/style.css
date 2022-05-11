@@ -16,7 +16,7 @@
 /* HEADER DETAILS */
 header {
     background-color: var(--blue);
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
     border-bottom: 2px solid var(--coral);
@@ -55,29 +55,25 @@ li {
     text-decoration: none;
   }
 
-/* .homePage{
+.homePage{
     margin: 0;
     background-image: url('../images/Background.png');
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
-} */
+}
 
 .homePage h1 {
     font-size: 6rem;
     color: white;
     text-align: center;
     font-weight: 300;
-    /* margin-top: 10%; */
     padding-top: 290px;
 }
 
 /* BODY DETAILS */
 body {
-    background-image: url('../images/Background.png');
-    background-size: cover;
-    height: 100vh;
-    background-repeat: no-repeat;
+    background-color: var(--green);
 }
 
 main {
@@ -104,10 +100,10 @@ section {
     padding-top: 10px;
     row-gap: 10px;
 } */
-.container {
+/* .container {
     margin-top: 10%;
     /* be aware this is affecting Footer too */
-}
+} */
 
 .row>* {
     padding-right: 0 !important;
