@@ -43,7 +43,7 @@ export default function Contact() {
     alert(result.status);
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="contactForm" onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" required />
