@@ -31,16 +31,22 @@ export default function Contact() {
       message: message.value,
     };
     // this will send the email (using nodemailer)
-    let response = await fetch('http://localhost:5000/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus('Send');
-    let result = await response.json();
-    alert(result.status);
+    try {
+      let response = await fetch('http://localhost:5000/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8',
+        },
+        body: JSON.stringify(details),
+      });
+      setStatus('Send');
+      let result = await response.json();
+      alert(result.status);
+    } catch (error) {
+      console.log(error);
+      alert('something went wrong!');
+    }
+    
   };
   return (
     <form className="contactForm" onSubmit={handleSubmit}>

@@ -22,7 +22,7 @@ header {
     border-bottom: 2px solid var(--coral);
     color: var(--lightBlue);
     /* z-index: 10; */
-    padding: 15px 35px 15px 35px;
+    padding: 20px 35px 20px 35px;
 }
 
 /* to make intro and nav sit in the same line */
@@ -40,6 +40,10 @@ nav {
     width: 50%;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 nav a {
     color: var(--lightBlue);
     transition-duration: 0.2s;
@@ -47,6 +51,10 @@ nav a {
 
 nav ul li a:hover {
     color: var(--darkGreen);
+}
+
+.active {
+    color:#D96C6C
 }
 
 li {
@@ -73,7 +81,7 @@ li {
 
 /* BODY DETAILS */
 body {
-    background-color: var(--green);
+    background-color: lightgray;
 }
 
 main {
@@ -140,8 +148,8 @@ h1 {
 .projectCard {
     /* margin: 10%; */
     border-bottom: var(--blue);
-    border-bottom-style: ridge;
-    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -214,7 +222,7 @@ h2 {
 /* FOOTER DETAILS */
 footer {
     background-color: var(--blue);
-    height: 40px;
+    /* height: 40px; */
     width: 100%;
     border-top: 2px solid var(--coral);
     color: var(--lightBlue);
@@ -233,7 +241,7 @@ footer {
     /* row-gap: 15px;
     column-gap: 10px; */
     /* width: 80vw; */
-    padding-top: 4px;
+    padding-top: 15px;
 }
 
 @media screen and (max-width: 1200px) {

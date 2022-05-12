@@ -1,15 +1,30 @@
 import React from 'react';
+import Project from './Project';
 
 export default function Portfolio() {
+  const projectsArray = [
+    {
+      title: "Sprout Spy",
+      description: "A web application that allows users to track their plant growth.",
+      image: "./images/SproutSpy.jpg",
+      deployedLink: "https://fast-cliffs-81659.herokuapp.com/",
+      githubLink: "https://github.com/got-git-group/SproutSpy"
+    },
+
+  ]
   return (
     <div className="container">
-      <section className="projectCard">
+      {projectsArray.map(proj => (
+        <Project project={proj} />
+      ))}
+
+      {/* <section className="projectCard">
         <img className="projectImg" src="./images/SproutSpy.jpg" alt="screenshot of SproutSpy website" />
         <aside className="projectLinks">
           <a href="https://fast-cliffs-81659.herokuapp.com/" target="_blank">Deployed Site</a>
           <a href="https://github.com/got-git-group/SproutSpy" target="_blank">GitHub Repository</a>
         </aside>
-      </section>
+      </section> */}
 
       <section className="projectCard">
         <aside className="projectLinks">
