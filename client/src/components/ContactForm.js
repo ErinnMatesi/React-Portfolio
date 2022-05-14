@@ -50,19 +50,22 @@ export default function Contact() {
   };
   return (
     <form className="contactForm" onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" required />
-      </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required />
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
-      </div>
-      <button type="submit">{status}</button>
+      <section className="formWrapper">
+        <div className="inputWrapper">
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" required />
+        </div>
+        <div className="inputWrapper">
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+        <div className="inputWrapper">
+          <label htmlFor="message">Message:</label>
+          <textarea id="message" required />
+        </div>
+        <button className="formButton"type="submit">{status}</button>
+      </section>
+      
     </form>
   );
 };

@@ -13,7 +13,15 @@
     --coral: #D96C6C;
 }
 
+/* BODY DETAILS */
+
+body {
+    background-color: white;
+    width: 100vw;
+}
+
 /* HEADER DETAILS */
+
 header {
     background-color: var(--blue);
     /* position: fixed; */
@@ -61,34 +69,37 @@ li {
     display: inline;
     padding: 0px 20px;
     text-decoration: none;
-  }
+}
+
+  /* HOME PAGE */
 
 .homePage{
     margin: 0;
     background-image: url('../images/Background.png');
     background-size: cover;
+    /* object-fit: cover; */
     height: 100vh;
+    width: 100vw;
     background-repeat: no-repeat;
 }
 
 .homePage h1 {
-    font-size: 6rem;
+    font-size: 12.5vw;
     color: white;
     text-align: center;
     font-weight: 300;
     padding-top: 290px;
 }
 
-/* BODY DETAILS */
-body {
-    background-color: whitesmoke;
+h1 {
+    font-size: 200%;
+    text-align: center;
+    font-weight: 300;
+    /* border-bottom: 1px solid var(--darkGreen); */
+    padding-bottom: 5px;
 }
 
-/* SECTION DETAILS */
-
-section {
-    padding: 20px;
-}
+    /* ABOUT PAGE */
 
 #about-me {
     /* margin-top: 10%; */
@@ -109,15 +120,7 @@ section {
     padding-left: 0 !important;
 }
 
-h1 {
-    font-size: 200%;
-    text-align: center;
-    font-weight: 300;
-    /* border-bottom: 1px solid var(--darkGreen); */
-    padding-bottom: 5px;
-}
-
-#headshot{
+#headshot {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -125,17 +128,11 @@ h1 {
     width: 200px;
 }
 
-/* Flexbox CREATION */
-/* .box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 15px;
-    column-gap: 10px;
-    /* width: 80vw; */
-    /* padding-top: 15px;
-} */
+/* PORTFOLIO SECTION */
+
+section {
+    padding: 20px;
+}
 
 .cardContainer {
     display: flex;
@@ -146,19 +143,20 @@ h1 {
     column-gap: 10px;
     width: 90vw;
     margin: auto;
+    margin-bottom: 70px;
 }
 
 .projectCard {
     margin: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
     border-radius: 5px;
     width: 25%;
-    background-color: rgb(234, 234, 234);
+    background-color: lightgray;
 }
 
 .projectCard:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 
 .projectImg {
@@ -184,32 +182,61 @@ h1 {
 
 h4 {
     text-align: center;
+    font-size: 2.5vh;
     margin-bottom: 15px;
-    color:var(--blue)
+    color: var(--blue);
+    border-bottom: 2px solid var(--coral);
+    padding-bottom: 8px;
 }
 
 /* CONTACT SECTION DETAILS */
 
-/* .contactForm {
-    margin-top: 10%;
-} */
-
-.logos {
-    width: 30px;
+.contactForm {
+    margin: auto;
+    width: 500px;
 }
-
-.text-center {
+.formWrapper {
+    margin-top: 5%;
     display: flex;
-    justify-content: space-evenly;
-    padding: 15px 0 0 0;
-    width: 100vw;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    border-radius: 8px;
 }
 
-.text-center li a:hover {
-    color: var(--darkGreen);
+.inputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 10px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+textarea {
+    display: inline-block;
+    float: left;
+}
+
+.formButton {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--coral);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
 }
 
 /* FOOTER DETAILS */
+
 footer {
     background-color: var(--blue);
     /* height: 40px; */
@@ -223,6 +250,10 @@ footer {
     bottom: 0;
 }
 
+.logos {
+    width: 30px;
+}
+
 .contactList {
     display: flex;
     flex-direction: row;
@@ -233,6 +264,8 @@ footer {
     /* width: 80vw; */
     padding-top: 15px;
 }
+
+/* Media Queries */
 
 @media screen and (max-width: 1270px) {
     .projectCard {
@@ -276,3 +309,9 @@ footer {
         width: 80%;
     }
 }
+
+/* @media screen and (max-width: 400px) {
+    .homePage {
+        object-fit: fill;
+    }
+} */
