@@ -5,75 +5,48 @@ export default function Portfolio() {
   const projectsArray = [
     {
       title: "Sprout Spy",
-      description: "A web application that allows users to track their plant growth.",
+      description: "A web application that allows users to find their agricultural zone and which plants can be grow locally.",
       image: "./images/SproutSpy.jpg",
       deployedLink: "https://fast-cliffs-81659.herokuapp.com/",
       githubLink: "https://github.com/got-git-group/SproutSpy"
     },
-
+    {
+      title: "Weather Dashboard",
+      description: "A simple dashboard that takes a city input and displays the current weather conditions and a 5-day forecast.",
+      image: "./images/WeatherDashboard.PNG",
+      deployedLink: "https://erinnmatesi.github.io/Weather-Dashboard/",
+      githubLink: "https://github.com/ErinnMatesi/Weather-Dashboard"
+    },
+    {
+      title: "Javascript Quiz",
+      description: "A quiz about Javascript built by Javascript!",
+      image: "./images/JSQuiz.PNG",
+      deployedLink: "https://erinnmatesi.github.io/Javascript-Quiz/",
+      githubLink: "https://github.com/ErinnMatesi/Javascript-Quiz"
+    },
+    {
+      title: "CSS Cheatsheet",
+      description: "Quick reference code blocks for CSS.",
+      image: "./images/Cheatsheet.PNG",
+      deployedLink: "https://erinnmatesi.github.io/CSS-CheatSheet/",
+      githubLink: "https://github.com/ErinnMatesi/CSS-CheatSheet"
+    },
+    // {
+    //   title: "",
+    //   description: "",
+    //   image: "",
+    //   deployedLink: "",
+    //   githubLink: ""
+    // },
   ]
   return (
     <div className="container">
-      {projectsArray.map(proj => (
+      <section className="cardContainer">
+        {projectsArray.map(proj => (
         <Project project={proj} />
       ))}
-
-      {/* <section className="projectCard">
-        <img className="projectImg" src="./images/SproutSpy.jpg" alt="screenshot of SproutSpy website" />
-        <aside className="projectLinks">
-          <a href="https://fast-cliffs-81659.herokuapp.com/" target="_blank">Deployed Site</a>
-          <a href="https://github.com/got-git-group/SproutSpy" target="_blank">GitHub Repository</a>
-        </aside>
-      </section> */}
-
-      <section className="projectCard">
-        <aside className="projectLinks">
-          <a href="https://erinnmatesi.github.io/Weather-Dashboard/" target="_blank">Deployed Site</a>
-          <a href="https://github.com/ErinnMatesi/Weather-Dashboard" target="_blank">GitHub Repository</a>
-        </aside>
-        <img className="projectImg" src="./images/WeatherDashboard.PNG" alt="screenshot of Weather Dashboard site" />
       </section>
-
-      <section className="projectCard">
-        <img className="projectImg" src="./images/JSQuiz.PNG" alt="screenshot of Javascript quiz" />
-        <aside className="projectLinks">
-          <a href="https://erinnmatesi.github.io/Javascript-Quiz/" target="_blank">Deployed Site</a>
-          <a href="https://github.com/ErinnMatesi/Javascript-Quiz" target="_blank">GitHub Repository</a>
-        </aside>
-      </section>
-
-      <section className="projectCard">
-        <aside className="projectLinks">
-          <a href="https://erinnmatesi.github.io/CSS-CheatSheet/" target="_blank">Deployed Site</a>
-          <a href="https://github.com/ErinnMatesi/CSS-CheatSheet" target="_blank">GitHub Repository</a>
-        </aside>
-        <img className="projectImg" src="./images/Cheatsheet.PNG" alt="screenshot of blocks of CSS code" />
-      </section>
-
-      <section className="projectCard">
-        <img className="projectImg" src="./images/Screenshot.PNG" alt="screenshot of app in use" />
-        <aside className="projectLinks">
-          {/* <a href="https://fast-cliffs-81659.herokuapp.com/" target="_blank">Deployed Site</a> */}
-          <a href="https://github.com/ErinnMatesi/Employee-Tracker" target="_blank">GitHub Repository</a>
-        </aside>
-      </section>
-
-      <section className="projectCard">
-        <aside className="projectLinks">
-          <a href="https://fast-cliffs-81659.herokuapp.com/" target="_blank">Deployed Site</a>
-          <a href="https://github.com/got-git-group/SproutSpy" target="_blank">GitHub Repository</a>
-        </aside>
-        <img className="projectImg" src="./images/SproutSpy.jpg" alt="screenshot of SproutSpy website" />
-      </section>
-      {/* 
       
-            <a href="https://erinnmatesi.github.io/CSS-CheatSheet/" target="_blank">
-              <img src="./images/Cheatsheet.PNG" alt="screenshot of blocks of CSS code" className="prjImg"/>
-
-            <a href="https://github.com/ErinnMatesi/Employee-Tracker" target="_blank">
-              <img src="./images/Screenshot.PNG" alt="screenshot of app in use" className="prjImg"/>
-
-      </section> */}
     </div>
   );
 };

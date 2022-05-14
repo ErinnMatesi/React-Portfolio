@@ -4,7 +4,6 @@ export default function About() {
   return (
     <div className="container">
       <section className = "container" id="about-me">
-        <h1>About Me</h1>  
         <div className="row d-flex justify-content-around"> 
           <img className="col-12 col-lg-3" src="./images/Headshot.jpg" alt="Headshot of brunette female with black jacket over white-blue striped shirt, on blurred green background" width="200px" height="250px" id="headshot"/> 
           <section className ="col-12 col-lg-7">
