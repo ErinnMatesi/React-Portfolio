@@ -8,14 +8,13 @@ export default function Header() {
           <p>Erinn Matesi - Web Developer</p>
         </div>
         <nav>
-        <ul> 
-          <li><a className={window.location.pathname === "/" ? "active" : ""} href="/">Home</a></li>
-          <li><a className={window.location.pathname === "/about" ? "active" : ""} href="/about">About Me</a></li>
-          <li><a className={window.location.pathname === "/contact" ? "active" : ""} href="/contact">Contact</a></li>
-          <li><a className={window.location.pathname === "/portfolio" ? "active" : ""} href="/portfolio">Portfolio</a></li>
-          <li><a className={window.location.pathname === "/resume" ? "active" : ""} href="./Resume - Erinn Matesi.pdf" target="_blank">Resume</a></li>
-        </ul>
-      </nav>
+          <ul> 
+            <li><a className={window.location.pathname === "/" ? "active" : ""} href="/">Home</a></li>
+            <li><a className={window.location.pathname === "/about" ? "active" : ""} href="/about">About Me</a></li>
+            <li><a className={window.location.pathname === "/contact" ? "active" : ""} href="/contact">Contact</a></li>
+            <li><a className={window.location.pathname === "/portfolio" ? "active" : ""} href="/portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
       </header>
     </div>
   );

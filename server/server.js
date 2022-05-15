@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-const nodemailer = require("nodemailer");
 require('dotenv').config();
+const nodemailer = require("nodemailer");
 
 const app = express();
 app.use(cors());
@@ -9,11 +9,17 @@ app.use(express.json());
 
 
 const contactEmail = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
   service: 'gmail',
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASS,
   },
+  tls: {
+    rejectUnauthorized: false
+  }
 });
 
 contactEmail.verify((error) => {
@@ -30,7 +36,7 @@ app.post("/contact", (req, res) => {
   const message = req.body.message; 
   const mail = {
     from: name,
-    to: process.env.MYEMAIL,
+    to: process.env.EMAIL,
     subject: "Contact Form Submission",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
@@ -38,7 +44,8 @@ app.post("/contact", (req, res) => {
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {
-      res.json({ status: "ERROR" });
+      res.json({ status: "ERROR here" });
+      console.log(mail);
     } else {
       res.json({ status: "Message Sent" });
     }

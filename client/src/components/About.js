@@ -2,16 +2,20 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="container">
-      <section className = "container" id="about-me">
-        <div className="row d-flex justify-content-around"> 
-          <img className="col-12 col-lg-3" src="./images/Headshot.jpg" alt="Headshot of brunette female with black jacket over white-blue striped shirt, on blurred green background" width="200px" height="250px" id="headshot"/> 
-          <section className ="col-12 col-lg-7">
-            <p>Hello! My name is Erinn and I am currently a student in the UW fullstack bootcamp. I am familiarizing myself with HTML, CSS, Javascript, jQuery and Bootstrap on the front-end. Node.js, React and others are yet to come.</p>
-            <br/> 
-            <p>I am a PNW native who believes in the preservation and recovery of our environment. I look forward to learning how your company aligns with that value!</p>
-          </section>
-        </div>
+    <div className="aboutMe">
+      <img src="./images/Headshot.jpg" alt="Headshot of brunette female with black jacket over white-blue striped shirt, on blurred green background" width="200px" height="250px" id="headshot"/> 
+      <section className ="blurb">
+        <p>Hello! My name is Erinn and I am a <b>fullstack web developer</b> with a strong background in sales and account management.</p>
+        <br></br>
+        <p>I recently earned a certificate in full stack development from the University of Washington, with newly developed skills in <b>JavaScript, Node, Sequelize and React</b>, to name a few.</p>
+        <br></br>
+        <p>I am experienced in <b>highly communicative</b> team environments, while also being independently responsible for timelines and project completion.</p>
+        <br></br>
+        <p>During the bootcamp, I leveraged my <b>interpersonal skills</b> to provide support to team members and maintain drive toward completing all group project requirements.</p> 
+        <br></br>
+        <p>Stepping into a new field is extraordinarily exciting and I plan to use both tenured social and newly acquired <b>technical skills</b> to help the team I join to continue to develop innovative solutions.</p>
+        <br></br>
+        <a href="./Resume - Erinn Matesi.pdf" target="_blank">Click here to download my resume!</a>
       </section>
     </div>
   );

@@ -30,7 +30,7 @@ header {
     border-bottom: 2px solid var(--coral);
     color: var(--lightBlue);
     /* z-index: 10; */
-    padding: 20px 35px 20px 35px;
+    padding: 20px 35px;
 }
 
 /* to make intro and nav sit in the same line */
@@ -101,31 +101,44 @@ h1 {
 
     /* ABOUT PAGE */
 
-#about-me {
-    /* margin-top: 10%; */
-    padding: 30px 0 0 0;
-}
-
-/* .row {
-    margin: 5px 0 0 0;
+.aboutMe {
+    margin: auto;
+    padding-top: 10%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-top: 10px;
-    row-gap: 10px;
-} */
-
-.row>* {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 30px;
+    /* margin-bottom: 50px; */
 }
 
 #headshot {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 10px solid var(--darkGreen);
+    border: 5px solid var(--green);
     width: 200px;
+    /* border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px; */
+    border-radius: 8px;
+}
+
+.blurb {
+    background-color: lightgray;
+    /* border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; */
+    border-radius: 8px;
+}
+
+.blurb a {
+    color: var(--green);
+    text-align: center;
+}
+
+.blurb a:hover {
+    color: var(--coral);
 }
 
 /* PORTFOLIO SECTION */
@@ -143,7 +156,7 @@ section {
     column-gap: 10px;
     width: 90vw;
     margin: auto;
-    margin-bottom: 70px;
+    /* margin-bottom: 50px; */
 }
 
 .projectCard {
@@ -235,6 +248,10 @@ textarea {
     border-radius: 8px;
 }
 
+.formButton:hover {
+    background-color: var(--green);
+}
+
 /* FOOTER DETAILS */
 
 footer {
@@ -294,14 +311,28 @@ footer {
     }
 }
 
+@media screen and (max-width: 655px) {
+    .aboutMe {
+        flex-direction: column;
+    }
+    .blurb {
+        border-radius: 8px;
+    }
+    #headshot {
+        border-radius: 8px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .projectCard {
         width: 70%;
     }
 }
 
-@media screen and (max-width: 595px) {
-   /* change nav to hamburger - maybe before this cutoff */
+@media screen and (max-width: 580px) {
+    header {
+        padding: 15px 25px;
+    }
 }
 
 @media screen and (max-width: 555px) {
@@ -310,8 +341,13 @@ footer {
     }
 }
 
-/* @media screen and (max-width: 400px) {
-    .homePage {
-        object-fit: fill;
+@media screen and (max-width: 456px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
     }
-} */
+
+    nav ul li {
+         padding: 2px 0px;
+    }
+}
