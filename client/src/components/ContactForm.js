@@ -32,7 +32,7 @@ export default function Contact() {
     };
     // this will send the email (using nodemailer)
     try {
-      let response = await fetch('https://warm-caverns-10713.herokuapp.com/contact', {
+      let response = await fetch('https://erinnmatesi.herokuapp.com/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8',
