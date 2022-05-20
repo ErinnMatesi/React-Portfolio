@@ -27,18 +27,21 @@ export default function About() {
         <div class="techFlex">
           <ul class="techList">
             <li>Javascript</li>
-            <li>React</li>
-            <li>Node</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
           </ul>
           <ul class="techList">
-            <li>Javascript</li>
             <li>React</li>
+            <li>MySQL</li>
             <li>Node</li>
+            <li>Express</li>
           </ul>
           <ul class="techList">
-            <li>Javascript</li>
-            <li>React</li>
-            <li>Node</li>
+            <li>MongoDB</li>
+            <li>GraphQL</li>
+            <li>Git</li>
+            <li>JawsDB</li>
           </ul>
         </div>
         
