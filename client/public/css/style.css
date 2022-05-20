@@ -295,8 +295,8 @@ footer {
     color: var(--lightBlue);
     line-height: 3;
     text-align: center;
-    /* z-index: 10;
-    position: fixed; */
+    z-index: 10;
+    position: fixed;
     bottom: 0;
 }
 
