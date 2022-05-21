@@ -237,6 +237,36 @@ h4 {
 
 /* CONTACT SECTION DETAILS */
 
+#emailMe {
+    margin-top: 3vh;
+    /* background-color: lightgray; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+#emailMe h2 {
+    font-size: 200%;
+    text-align: center;
+    font-weight: 300;
+    /* border-bottom: 1px solid var(--darkGreen); */
+    padding-bottom: 5px;
+    /* color: var(--blue) */
+}
+
+#email {
+    color: var(--coral);
+    font-size: 150%;
+    text-align: center;
+}
+
+#invitation {
+    margin-top: 2vh;
+    text-align: center;
+}
+
 .contactForm {
     margin: auto;
     width: 500px;
@@ -247,6 +277,7 @@ h4 {
     flex-wrap: wrap;
     background-color: lightgray;
     border-radius: 8px;
+    padding: 25px;
 }
 
 .inputWrapper {
@@ -397,7 +428,7 @@ footer {
     }
 
     nav ul li {
-         padding: 2px 0px;
+        padding: 2px 0px;
     }
 
     .aboutMe{
