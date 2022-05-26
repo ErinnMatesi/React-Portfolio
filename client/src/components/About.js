@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div>
       <div>
-        <h1>Erinn - Fullstack Developer</h1>
+        <h1 id="intro">Erinn - Fullstack Developer</h1>
       </div>
       <div className="aboutMe">
         <img src="./images/Headshot.jpg" alt="Headshot of brunette female with black jacket over white-blue striped shirt, on blurred green background" width="200px" height="250px" id="headshot"/> 
