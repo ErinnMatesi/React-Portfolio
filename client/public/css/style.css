@@ -1,7 +1,11 @@
 * {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Slab', serif;
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'League Spartan', sans-serif;
 }
 
 /* setting base colors for use throughout the site */
@@ -176,7 +180,7 @@ nav ul li {
     line-height: 1.2;
 }
 
-/* PORTFOLIO SECTION */
+/* PORTFOLIO PAGE */
 
 .cardContainer {
     display: flex;
@@ -210,7 +214,7 @@ nav ul li {
     margin-bottom: 10px;
 }
 
-.projectLinks {
+.projectDetails {
     display: flex;
     flex-direction: column;
     row-gap: 3px;
@@ -218,11 +222,11 @@ nav ul li {
     padding: 20px;
 }
 
-.projectLinks a {
+.projectDetails a {
     color: var(--coral);
 }
 
-.projectLinks a:hover {
+.projectDetails a:hover {
     color: var(--green);
 }
 
@@ -235,7 +239,28 @@ h4 {
     padding-bottom: 8px;
 }
 
-/* CONTACT SECTION DETAILS */
+#projDescrip {
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    line-height: 1.1;
+}
+
+#techUsed {
+    font-size: 150%;
+    text-align: center;
+    padding-bottom: 10px;
+    line-height: 1.1;
+}
+
+#techs {
+    text-align: center;
+}
+
+.projLinks {
+    text-align: center;
+}
+
+/* CONTACT PAGE */
 
 #emailMe {
     margin-top: 3vh;
@@ -271,6 +296,7 @@ h4 {
     margin: auto;
     width: 500px;
 }
+
 .formWrapper {
     margin-top: 5%;
     display: flex;
@@ -381,6 +407,8 @@ footer {
     }
     .aboutMe {
         flex-direction: column;
+        row-gap: 25px;
+        padding-top: 4vh;
     }
     .blurb {
         border-radius: 8px;
@@ -391,11 +419,10 @@ footer {
     .technologies {
         width: 60vw;
     }
+    #intro {
+        margin-top: 5vh;
+    }
 }
-
-/* @media screen and (max-width: 655px) {
-    
-} */
 
 @media screen and (max-width: 600px) {
     .projectCard {
@@ -409,6 +436,12 @@ footer {
 @media screen and (max-width: 580px) {
     header {
         padding: 15px 25px;
+    }
+    .contactForm {
+        width: 90vw;
+    }
+    #emailMe {
+        width: 90vw;
     }
 }
 
