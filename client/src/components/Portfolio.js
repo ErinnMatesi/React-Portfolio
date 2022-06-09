@@ -4,6 +4,14 @@ import Project from './Project';
 export default function Portfolio() {
   const projectsArray = [
     {
+      title: "Sprout Spy 3.0",
+      description: "A fullstack gardening website designed to get a novice gardener started by identifying plants that they can grow locally. Utilizes a Node/Express & MongoDB backend and React frontend.",
+      image: "",
+      tech: "Apollo & GraphQL - React - MongoDB - Express - Node - HTML - CSS & SCSS - Heroku",
+      deployedLink: "./images/welcomeScreenshot.PNG",
+      githubLink: "https://github.com/got-git-group/SproutSpy-3.0"
+    },
+    {
       title: "Tech Blog",
       description: "A fullstack blog app that allows user to login to create and delete posts and comments.",
       image: "./images/blog.PNG",
@@ -51,14 +59,6 @@ export default function Portfolio() {
     //   deployedLink: "https://erinnmatesi.github.io/CSS-CheatSheet/",
     //   githubLink: "https://github.com/ErinnMatesi/CSS-CheatSheet"
     // },
-    {
-      title: "Sprout Spy 3.0",
-      description: "A fullstack gardening website designed to get a novice gardener started by identifying plants that they can grow locally. Utilizes a Node/Express & MongoDB backend and React frontend.",
-      image: "",
-      tech: "Apollo & GraphQL - React - MongoDB - Express - Node - HTML - CSS & SCSS - Heroku",
-      deployedLink: "",
-      githubLink: "https://github.com/got-git-group/SproutSpy-3.0"
-    },
   ]
   return (
     <div className="container">
