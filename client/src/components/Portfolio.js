@@ -51,14 +51,14 @@ export default function Portfolio() {
     //   deployedLink: "https://erinnmatesi.github.io/CSS-CheatSheet/",
     //   githubLink: "https://github.com/ErinnMatesi/CSS-CheatSheet"
     // },
-    // {
-    //   title: "",
-    //   description: "",
-    //   image: "",
-    //   tech: "",
-    //   deployedLink: "",
-    //   githubLink: ""
-    // },
+    {
+      title: "Sprout Spy 3.0",
+      description: "A fullstack gardening website designed to get a novice gardener started by identifying plants that they can grow locally. Utilizes a Node/Express & MongoDB backend and React frontend.",
+      image: "",
+      tech: "Apollo & GraphQL - React - MongoDB - Express - Node - HTML - CSS & SCSS - Heroku",
+      deployedLink: "",
+      githubLink: "https://github.com/got-git-group/SproutSpy-3.0"
+    },
   ]
   return (
     <div className="container">
