@@ -6,9 +6,9 @@ export default function Portfolio() {
     {
       title: "Sprout Spy 3.0",
       description: "A fullstack gardening website designed to get a novice gardener started by identifying plants that they can grow locally. Utilizes a Node/Express & MongoDB backend and React frontend.",
-      image: "",
+      image: "./images/welcomeScreenshot.PNG",
       tech: "Apollo & GraphQL - React - MongoDB - Express - Node - HTML - CSS & SCSS - Heroku",
-      deployedLink: "./images/welcomeScreenshot.PNG",
+      deployedLink: "https://sprout-spy.herokuapp.com/",
       githubLink: "https://github.com/got-git-group/SproutSpy-3.0"
     },
     {
